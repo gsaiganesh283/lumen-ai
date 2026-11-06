@@ -1,0 +1,2 @@
+# Keys, backups and uploads are never served directly.
+Require all denied

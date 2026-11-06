@@ -1,0 +1,13 @@
+# Secrets and local config — never commit
+shared/config.php
+
+# Runtime data: keys, license key-pair, backups, logs, generated manual/images
+data/*
+!data/.htaccess
+
+# Composer dependencies (install with `composer install` on the server)
+vendor/
+
+# Misc
+*.log
+.DS_Store

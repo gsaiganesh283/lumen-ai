@@ -1,0 +1,9 @@
+# Public download folder: one click = file download, no folder listing
+Options -Indexes
+<FilesMatch "\.(exe|msi|zip)$">
+  ForceType application/octet-stream
+  <IfModule mod_headers.c>
+    Header set Content-Disposition attachment
+    Header set X-Content-Type-Options nosniff
+  </IfModule>
+</FilesMatch>
